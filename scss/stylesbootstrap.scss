@@ -1,0 +1,48 @@
+@import "bootstrap";
+
+.container--color {
+    font-size: 20px;
+    color: rgb(78, 48, 212);
+}
+@mixin fonts ($tam) {
+    font-size: $tam;
+    font-style: italic;
+}
+@for $f from 1 through 5 {
+    .container--imagenesadjuntas-#{$f}{ 
+        height: 3em * $f;
+        width: 20% * $f;
+        background-color: #cccfff;
+        display: ruby-base;
+        border: rgb(240, 10, 10) 2px solid;
+        text-align: center;
+        @extend .container--color;
+    }
+}
+
+
+$fondos: ( /*Declaramos nuestro mapa*/
+        uno: #55acee,
+        dos:  #3a5795,
+        tres: #C25E30,
+        cuatro: #3c5a92,
+        cinco: #74f589,
+); 
+
+@each $imgn, $color in $fondos {
+    .imagen__fondo-#{$imgn}{
+        @if $imgn == uno {
+            background-image: url('http://placeimg.com/150/150/people');
+        }@else if $imgn == dos {
+            background-image: url('http://placeimg.com/150/150/nature');
+        }@else if $imgn == tres {
+            background-image: url('http://placeimg.com/150/150/arch');
+        }@else if $imgn == cuatro {
+            background-image: url('http://placeimg.com/150/150/sepia');
+        }@else if $imgn == cinco {
+            background-image: url('http://placeimg.com/150/150/rayscal');
+        }
+        color: $color;
+        background-repeat: no-repeat;
+    }
+}

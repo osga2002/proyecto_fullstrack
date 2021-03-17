@@ -1,0 +1,59 @@
+@import "style";
+
+$fuentetitulo: normal 10px/1.5 'Comic Sans', sans-serif;
+$colorfuente: #3e8aec;
+$magenescaja: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+.container {
+    color: $colorfuente;
+    background: #fff;
+    width: 100%;
+    box-shadow: $magenescaja;
+    font: $fuentetitulo;
+    text-justify: distribute;
+}
+.container__inmueble--detalle {
+    margin: 5px;
+    text-align: center;
+    padding: 1wv;
+}
+
+.container--resaltado {
+    font-weight: 100;
+    font-style: oblique;
+    color: hsl(88, 94%, 57%);
+}
+
+.container__inmueble_imagen {
+    width: 10%;
+    margin: #1520b1 15px solid !important;
+}
+.container__titulo_h5 {
+    font-size: 30px;
+}
+
+.container__inmueble--mapa {
+    border: 2px solid #000;
+}
+
+.container__inmueble--box{
+    width: 50%;
+    background-color: #cccfff;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.container--color {
+    font-size: 20px;
+    color: rgb(78, 48, 212);
+}
+@for $f from 1 through 5 {
+    .container--imagenesadjuntas-#{$f}{ 
+        height: 1.5em * $f;
+        width: 10% * $f;
+        background-color: #cccfff;
+        display: ruby-base;
+        border: #000 5px dashed;
+        @extend .container--color;
+    }
+}

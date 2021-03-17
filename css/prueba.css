@@ -1,0 +1,103 @@
+body {
+  background-color: blueviolet;
+  color: black; }
+  body h1 {
+    width: 90%;
+    height: 50%; }
+  body section {
+    background: #e2e2e2;
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(50%, #dbdbdb), color-stop(51%, #d1d1d1), color-stop(100%, #fefefe));
+    background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+    color: #14140e; }
+
+.header {
+  font-size: 1vw; }
+
+.header__menu {
+  position: relative; }
+
+.header__icono {
+  width: 32px;
+  height: 32px;
+  background-color: blanchedalmond; }
+
+.header_submenus {
+  padding: 2px; }
+
+.container {
+  color: #3e8aec;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  font: normal 10px/1.5 "Comic Sans", sans-serif;
+  text-justify: distribute; }
+
+.container__inmueble--detalle {
+  margin: 5px;
+  text-align: center;
+  padding: 1wv; }
+
+.container--resaltado {
+  font-weight: 100;
+  font-style: oblique;
+  color: #98f82a; }
+
+.container__inmueble_imagen {
+  width: 10%;
+  margin: #1520b1 15px solid !important; }
+
+.container__titulo_h5 {
+  font-size: 30px; }
+
+.container__inmueble--mapa {
+  border: 2px solid #000; }
+
+.container__inmueble--box {
+  width: 50%;
+  background-color: #cccfff;
+  font-size: 20px;
+  border-radius: 15px; }
+
+.container--color, .container--imagenesadjuntas-1, .container--imagenesadjuntas-2, .container--imagenesadjuntas-3, .container--imagenesadjuntas-4, .container--imagenesadjuntas-5 {
+  font-size: 20px;
+  color: #4e30d4; }
+
+.container--imagenesadjuntas-1 {
+  height: 1.5em;
+  width: 10%;
+  background-color: #cccfff;
+  display: ruby-base;
+  border: #000 5px dashed; }
+
+.container--imagenesadjuntas-2 {
+  height: 3em;
+  width: 20%;
+  background-color: #cccfff;
+  display: ruby-base;
+  border: #000 5px dashed; }
+
+.container--imagenesadjuntas-3 {
+  height: 4.5em;
+  width: 30%;
+  background-color: #cccfff;
+  display: ruby-base;
+  border: #000 5px dashed; }
+
+.container--imagenesadjuntas-4 {
+  height: 6em;
+  width: 40%;
+  background-color: #cccfff;
+  display: ruby-base;
+  border: #000 5px dashed; }
+
+.container--imagenesadjuntas-5 {
+  height: 7.5em;
+  width: 50%;
+  background-color: #cccfff;
+  display: ruby-base;
+  border: #000 5px dashed; }

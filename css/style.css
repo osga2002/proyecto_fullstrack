@@ -1,0 +1,274 @@
+/* 
+Como resetear la pagina y dejarla limpia para que el diseñador pueda trabajar
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+body {
+    background: rgba(237,237,237,1);
+    background: -moz-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*h1 {
+    width: 100%;
+    font-style: italic; 
+    color: rgb(96, 161, 235);
+    text-align: center;
+    font-weight: bold;
+}
+h3 {
+    line-height: 1.6;
+    text-decoration: dashed;
+    letter-spacing: 3px;
+}
+header {
+    display: inline-flex;
+    vertical-align: sub;
+    padding-left: 15px;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    list-style-type: circle;
+    list-style: georgian;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    color: #866786;
+    padding: 0.2em;
+    border: #ad3030 solid 1px;
+    border-radius: 10px;
+    list-style-type: circle;
+    list-style: georgian;
+    width: 10vw;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+ }
+nav ul ul li {
+    display: block;
+ }
+nav ul li:hover ul {
+    display:block;
+ }
+ 
+footer {
+    /*background-image:url("https://mdn.mozillademos.org/files/11991/startransparent.gif"); 
+    text-align: center;
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+    color: rgb(20, 20, 14);
+    position:relative;
+}
+input text {
+    background-color: yellow;
+}
+.inmueblesTexto {  /* CamelCase 
+    font-size: 15px;
+    padding: 5vw;
+}
+.inmueblesTexto p {
+    font-size: 20px;
+    background-color: rgb(186, 240, 250);
+    text-align: justify;
+    word-spacing: 2px;
+    padding: 5vw;
+}
+
+table {
+    margin-left: 10vw;
+    padding: 5vw;
+    width: 80%;
+    align-content: center;
+    background-color: rgb(185, 235, 250);
+}
+table tr th {
+    font-size: 15px;
+    font-style: bold;
+    border-radius: 15px;
+    border-style: double;
+    border: 2px solid red;
+    padding-top: 10px;
+}
+
+table tr td {
+    text-align: left;
+    border-style: dotted;
+}
+.veraudio {
+    border: #866786 solid 2px ;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    display: inline-table;
+    float: inline-end;
+    color: #ad3030;
+    background-color: aqua;
+    position: sticky;
+}
+
+.divfooter {
+    width: 33%;
+    display: inline-block;
+}
+
+section {    
+    padding-left: 5vw;
+    display: inline-block;
+}
+.fotosEmpresa{
+    width: max-content;
+    height: max-content;
+    margin-left: 5vw;
+}
+input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.listarClientesG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clientes {
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    border: #ad3030 1px solid;
+}
+
+.listarPymesG {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 900px;
+    justify-content: space-between;
+    font-size: 1em;
+    padding: 20px;
+}
+
+.pymes {
+    padding: 1.5vw;
+    text-align: center;
+    border-radius: 10px;
+    border: #2b58d6 1px solid;
+    width: 200px;
+}
+
+/* Grids 
+.contenedor{
+    width: 90%;
+    margin: 25px auto;
+    padding: 15px;
+    display: grid;
+    grid-gap: 10px; /* Evito dar los márgenes de cada uno de los elementos html 
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Lo divido en tres columnas del mismo tamaño 
+    /* grid-template-columns: repeat(3, 1fr); Otra forma de escribir lo de arriba 
+    grid-template-rows: repeat(4, auto);
+ }
+ .headerDetalle{
+    background-color: rgb(178, 185, 180);
+    color: #E9ECF4;
+    grid-column-start: 1; 
+    grid-column-end: 5;
+    height: 70px;
+    border-radius: 15px;
+    text-align: center important!;
+ }
+ .mainDetalle{
+    background-color: rgb(222, 241, 241);
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    border-radius: 15px;
+ }
+ .imagenInmueble{
+    background-color: rgb(58, 146, 118);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: span 2; /* Me toma dos rows/filas, para no calcular los números de filas 
+ }
+ .detalle{
+    background-color: #c6f852;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    border: #866786 2px solid;
+    border-radius: 20px;
+    font-size: 2em;
+ }
+ .ubicacionDetalle{
+    background-color: darkcyan;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 4; 
+ }
+
+.efectomover {
+    border: 1px solid #866786;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+@keyframes efectotitulo {
+    0% {width: 100px;}
+    25% {width: 200px;}
+    50% {width: 400px; background-color: #866786;}
+    75% {width: 200px; background-color: #c6f852;}
+    100% {width: 1000px; background-color: azure;}
+}
+.efectotitulo {
+    width: 300px;
+    animation-name: efectotitulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    background-color: aquamarine;
+    animation-delay: 0s;
+    display: grid;
+    place-content: center;
+}*/
+
+@media screen and (max-width: 600px) {
+    h1 {
+        background-color: chartreuse;
+        width: 75%;
+    }
+    body {
+        background-color: rgb(87, 11, 21);
+        margin: 0;
+        padding: 0;
+    }
+}    

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+  .carousel-inner img {
+height: 100%;
+    width: 100%;
+    padding: 2vw;
+  }
+  </style>
+    <title>Proyecto Inmobiliaria</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="imag/ico_inicio.jpg" width="32px" height="32px" alt="">
+            <a class="navbar-brand navbar-dark" href="#">Inmobiliaria SION</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="quienessomos.html">Quienes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="inmuebles.html">Inmuebles</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="clientes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Clientes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="clientesgrandes.html">Grandes Empresas</a>
+                    <a class="dropdown-item" href="pymes.html">Pymes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ayuda.html">Ayuda</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Encuentra" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <div class="row">
+            <div class="col-sm-12 text-center"><h1 class="animate__animated animate__rubberBand">Bienvenidos a nuestra Inmobiliaria</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/800/500?random=1" alt="Jehova">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/800/500?random=2" alt="Jesús">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://picsum.photos/800/500?random=3" alt="Espiritu Santo">
+                    </div>
+                </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>Inmuebles</h2>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Inscribir su Inmueble</button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Carga Tu Inmueble</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="ubicacion" class="col-form-label">Ciudad / Barrio:</label>
+                                        <input type="text" class="form-control" id="ubicacion">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="direccion" class="col-form-label">Dirección:</label>
+                                        <input type="text" class="form-control" id="direccion">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inm-descrip" class="col-form-label">De que consta:</label>
+                                        <textarea class="form-control" id="inm-descrip"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="valorinmueble" class="col-form-label">Valor:</label>
+                                        <input type="number" class="form-control" id="valorinmueble">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Enviar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center"><img class="animate__animated animate__backInDown" src="imag/incioinmobiliaria.jpg" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center"><h1 class="animate__animated animate__rubberBand">Incluir video al Inicio de la Pagina</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center animate__animated animate__fadeInTopRight"><iframe width="560" height="315" src="https://www.youtube.com/embed/O2dSAyxt2mk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </section>
+    </main>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container-fluid p-2"  style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <p>Todos los derechos reservados</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <address>Bogotá D.C., Colombia.</address>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    © 2021 Copyright:
+                    <a class="text-dark" href="https://jesusreydereyes.com/">jesusreydereyes.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
